@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 def plot(id=None, xlabel='x-axis', ylabel='y-axis', title="", groups=[('plot',{'x':[0,], 'y':[0,], 'label':"Test"}),]):
 	plt.figure(id)
 
-	plt.grid(b=True, which='major', color='#666666', linestyle='-')
+	plt.grid(which='major', color='#666666', linestyle='-')
 	plt.minorticks_on()
-	plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
+	plt.grid(which='minor', color='#999999', linestyle='-', alpha=0.2)
 
 	plt.xlabel(xlabel) 
 	plt.ylabel(ylabel) 
@@ -83,14 +83,14 @@ def dda(x1, y1, x2, y2):
 		yflist.append(y)
 		xrlist.append(round(x))
 		yrlist.append(round(y))
-		print(f"\t{i}\t\t{x}\t\t{y}\t\t{round(x)}\t\t{rounds(y)}")
+		print(f"\t{i}\t\t{x}\t\t{y}\t\t{round(x)}\t\t{round(y)}")
 		i += 1
 		step -= 1
 
 		if step == 0:
 			break
 
-	print("\n\n\t\t So we obtained coordinates to plot to archieve the given line.")
+	print("\n\n\t\t So we obtained coordinates to plot to achieve the given line.")
 
 	return xflist, yflist, xrlist, yrlist
 
@@ -172,7 +172,7 @@ def bla(x1, y1, x2, y2):
 
 		k += 1
 
-	print("\n\n\t\t So we obtained coordinates to plot to archieve the given line.")
+	print("\n\n\t\t So we obtained coordinates to plot to achieve the given line.")
 
 	return xlist, ylist
 
